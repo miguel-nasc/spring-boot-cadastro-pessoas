@@ -1,10 +1,14 @@
 package com.projeto.cadastro.dto;
 
 import com.projeto.cadastro.entitade.Pessoa;
+import jakarta.validation.constraints.NotNull;
 
 public class PessoaDTO {
+    @NotNull
     private String nome;
+    @NotNull
     private String email;
+    @NotNull
     private String genero;
 
     public PessoaDTO() {
